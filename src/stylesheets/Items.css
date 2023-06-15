@@ -1,0 +1,71 @@
+.contenedor-imagen {
+  margin-top: 66px;
+  margin-inline-start: 100px;
+  margin-bottom: 66px;
+  display: inline-flex;
+  align-content: center;
+}
+
+article {
+  position: relative;
+  width: 600px;
+  transition: all 0.4s ease;
+}
+
+article img:first-child {
+  box-shadow: 0 60px 60px -60px #ffd700;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+
+article img:last-child {
+  position: absolute;
+  width: 600px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translate(23%);
+  transition: 0.4s ease;
+  opacity: 0;
+}
+
+article:hover {
+  transform: perspective(750px) rotateY(7deg) translateY(-1%) translateZ(0);
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+article:hover::before {
+  opacity: 1;
+}
+/*Efecto superpuesto sobre imagenes*/
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+img.imagen-1 {
+  position: relative;
+  width: 250px;
+  margin-right: 44px;
+  display: inline-block;
+}
+
