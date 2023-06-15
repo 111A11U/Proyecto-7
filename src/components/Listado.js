@@ -101,7 +101,7 @@ const Listado = () => {
           imagen="m09"
           imagen2="itm-entrar1"
           imagen3="m09"
-          escala="1.25 pulg."
+          escala="1.23 pulg."
           dimensiones="12.99 pulg. - 30cm"
           material="Polipropileno ABS PVC"
           color="Dark Decoy"
