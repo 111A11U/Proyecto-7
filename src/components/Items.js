@@ -3,7 +3,7 @@ import "../stylesheets/Items.css";
 
 const Item = (props) => {
   return (
-    <Link className="Link" to={"/detail/" + props.nombre + "/" + props.imagen + "/" + props.escala + "/" + props.dimensiones + "/" + props.material + "/" + props.color + "/" + props.linea} >
+    <Link className="Link" to={"/detail/" + props.nombre + "/" + props.imagen + "/" + props.escala + "/" + props.dimensiones + "/" + props.material + "/" + props.color + "/" + props.linea}>
       <div className="contenedor-imagen">
         <article>
           <img

@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "manumont" && password === "Atenea23") {
+    if (username === "joytoy" && password === "Atenea23") {
       navigate("/Listado");
     } else {
       alert("Favor ingrese correctamente el usuario");
@@ -25,6 +25,7 @@ function Login() {
           Usuario:
           <label>
             <input
+              placeholder="joytoy"
               className="Controls"
               type="text"
               value={username}
@@ -35,6 +36,7 @@ function Login() {
           Contraseña:
           <label>
             <input
+              placeholder="Atenea23"
               className="controls"
               type="password"
               value={password}

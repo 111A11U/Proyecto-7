@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
 import "../stylesheets/Detail.css";
-import { Button } from "semantic-ui-react";
 import { useNavigate } from "react-router-dom";
 
 const Detail = () => {
   let { nombre } = useParams();
-  let { imagen } = useParams();
+  let { imagen } = useParams();  
   let { altura } = useParams();
   let { dimensiones } = useParams();
   let { material } = useParams();
@@ -34,7 +33,8 @@ const Detail = () => {
         <br></br>
         <p>Línea: {linea}</p>
         <br></br>
-        <a href="https://www.youtube.com/watch?v=TADy7UjuXys" target="blank" class="boton">Ver video</a>
+        <a href="https://www.youtube.com/watch?v=QtPoQvBmns8" target="blank" class="boton">Ver video</a>
+        <br></br>
         <br></br>
         <br></br>
         <button onClick={() => navigate("/Listado")}> Back </button>

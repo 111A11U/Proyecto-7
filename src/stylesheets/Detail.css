@@ -3,7 +3,7 @@ nav {
   height: 15vh;
   display: flex;
   align-items: center;
-  background-image: url(../images/dtl-caution1.jpg);
+  background-image: url(../images/lst-caution2.jpg);
   background-size: cover;
 }
 
@@ -22,7 +22,7 @@ img {
 .contenido {
   margin: 40px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:3em;
+  font-size: 3.5ch;
   font-weight: bold;
   margin-left: 44px;
 
